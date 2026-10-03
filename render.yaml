@@ -1,0 +1,15 @@
+services:
+    - type: web
+    name: bible-auto-agent
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+            - key: GEMINI_KEY
+        sync: false
+            - key: WHATSAPP_TOKEN
+        sync: false
+            - key: PHONE_ID
+        sync: false
+            - key: YOUR_NUMBER
+        sync: false
