@@ -1,10 +1,8 @@
-flask
-google-generativeai
+Flask
 requests
-apscheduler
-edge-tts
-moviepy==1.0.3
+google-genai
 google-api-python-client
-google-auth-httplib2
 google-auth-oauthlib
-Pillow
+google-auth
+moviepy
+pillow
