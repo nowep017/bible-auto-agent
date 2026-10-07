@@ -2,7 +2,7 @@ from flask import Flask
 import os, json, asyncio, requests, random
 from datetime import datetime
 from apscheduler.schedulers.background import BackgroundScheduler
-import google.generativeai as genai
+from google import genai
 import edge_tts
 from moviepy.editor import ImageClip, concatenate_videoclips, AudioFileClip
 from google.oauth2.credentials import Credentials
