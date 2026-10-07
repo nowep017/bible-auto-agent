@@ -17,8 +17,12 @@ WHATSAPP_TOKEN = os.environ.get("WHATSAPP_TOKEN")
 PHONE_ID = os.environ.get("PHONE_ID")
 YOUR_NUMBER = os.environ.get("YOUR_NUMBER")
 
-genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+response = client.models.generate_content(
+    model="gemini-2.0-flash",
+    contents=prompt
+)
+text = response.text
 
 def send_whatsapp(msg):
     try:
