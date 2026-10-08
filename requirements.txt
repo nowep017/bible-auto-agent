@@ -8,3 +8,4 @@ moviepy
 Pillow
 gunicorn
 apscheduler
+edge-tts
