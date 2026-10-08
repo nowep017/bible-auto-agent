@@ -11,3 +11,4 @@ apscheduler
 edge-tts
 imageio==2.31.5
 imageio-ffmpeg==0.4.8
+setuptools
