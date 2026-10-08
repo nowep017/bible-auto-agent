@@ -4,8 +4,10 @@ google-genai
 google-api-python-client
 google-auth-oauthlib
 google-auth
-moviepy
+moviepy==1.0.3
 Pillow
 gunicorn
 apscheduler
 edge-tts
+imageio==2.31.5
+imageio-ffmpeg==0.4.8
